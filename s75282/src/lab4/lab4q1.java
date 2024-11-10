@@ -1,21 +1,22 @@
 
 package lab4;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 public class lab4q1 {
         public static void main(String[] args) {
-
-      String input = JOptionPane.showInputDialog("Enter RADIUS: ");
-        double r = Double.parseDouble(input);
+        Scanner input = new Scanner(System.in);
         
-        double diameter = 2*r ;
-        double circumference = 2* 3.14*r;
-        double  area = 3.14*r*r ;
+        System.out.println("ENTER THE FIRST INTEGER :");
+        int num1=input.nextInt();
+         System.out.println("ENTER THE SECOND INTEGER :");
+        int num2=input.nextInt();
         
-        
-        JOptionPane.showMessageDialog(null, "the diameter is " + diameter);
-        JOptionPane.showMessageDialog(null, "the circumference is " + circumference);
-        JOptionPane.showMessageDialog(null, "the area is " + area);
-        
+        int square1=num1*num1;
+        int square2= num2*num2;
+        int sumofsquare = square1 + square2;
+       int diffsquare = square1 - square2;
+       
+        System.out.println ("THE SUM OF SQUARE IS " +sumofsquare);
+                System.out.println ("THE DIFFERENCES OF SQUARE IS " +diffsquare);
 }
 }
