@@ -36,4 +36,6 @@ public class lab4q5 {
 
         JOptionPane.showMessageDialog(null, result);
      }
+     
+     
 }
